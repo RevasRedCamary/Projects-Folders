@@ -73,7 +73,7 @@ while running:
                 keyboard.write(" ")
                 if i == lineModulus:
                     i = 0
-                    lineModulus = 1
+                    lineModulus = 2
                     last_word = result.split()[-1]
                     print("Last word:" + last_word)
                     result, img = screenshot(False, True)
@@ -111,6 +111,5 @@ print("Out of loop")
 
 
 for image in img_files:
-    print("Showing image")
     image.show()
     running = False
